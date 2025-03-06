@@ -34,6 +34,7 @@
       border-radius: 10px;
       text-align: center;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
     }
     h2 {
       color: #fff;
@@ -83,6 +84,27 @@
     .hidden {
       display: none;
     }
+    /* Style untuk list admin dan application forms */
+    .list-section {
+      text-align: left;
+      margin-top: 20px;
+    }
+    .list-section h3 {
+      color: #fff;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 5px;
+    }
+    .list-section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .list-section li {
+      color: #fff;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
@@ -110,7 +132,28 @@
       <h2>Owner Panel</h2>
       <p>Welcome, Owner!</p>
       <p>Your email: nailaaurel24@gmail.com</p>
-      <p>This is your management panel. Set up everything you need here.</p>
+
+      <!-- Admin List Section -->
+      <div class="list-section">
+        <h3>Admin List</h3>
+        <ul id="adminList">
+          <!-- Contoh data admin, bisa diperbarui secara dinamis -->
+          <li>admin1@example.com</li>
+          <li>admin2@example.com</li>
+          <li>admin3@example.com</li>
+        </ul>
+      </div>
+
+      <!-- Application Forms List Section -->
+      <div class="list-section">
+        <h3>Application Forms</h3>
+        <ul id="applicationList">
+          <!-- Placeholder untuk daftar aplikasi yang masuk -->
+          <li>Application from User A</li>
+          <li>Application from User B</li>
+          <li>Application from User C</li>
+        </ul>
+      </div>
     </div>
   </div>
 
